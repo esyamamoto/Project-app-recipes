@@ -1,0 +1,30 @@
+.image-recipes {
+  width: 100%;
+}
+
+.buttonStart, .buttonFinish, .buttonRecipe {
+  border: none;
+  bottom: 0;
+  color: white;
+  cursor: pointer;
+  height: 40px;
+  left: 0;
+  margin: 0 2px;
+  position: fixed;
+  width: calc(33.33% - 2px);
+}
+
+.buttonFinish {
+  background-color: red;
+  left: 66.66%;
+}
+
+.buttonRecipe {
+  background-color: #007bff;
+  left: 33.33%;
+}
+
+.buttonStart {
+  background-color: #007bff;
+  left: 0%;
+}

@@ -1,0 +1,150 @@
+body {
+  background-color: #f0f0f0;
+  font-family: Arial , sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  text-align: justify;
+}
+
+.body-container-meals {
+  background-attachment: fixed;
+  background-color: #f0f0f0;
+  background-image: url('../images/wallpaper2.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-family: Arial , sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  padding: 55px;
+  position: relative;
+}
+
+@media ( min-width : 768px ) {
+
+  .body-container {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
+
+.container-button {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.video-recipes {
+  height: auto;
+  min-width: 50%;
+  width: 70%;
+}
+
+.favorite-button {
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  margin-right: 10px;
+  outline: none;
+  transition: background 0.3s;
+  width: 120px;
+}
+
+.image-favorite {
+  margin-left: 10px;
+  width: 45px;
+}
+
+.favorite-button:hover {
+  background: rgba(0, 68, 255, 0.243);
+  border: 2px solid black;
+}
+
+.favorite-button:focus {
+  background: rgba(0, 68, 255, 0.243);
+  border: 2px solid black;
+}
+
+.container-photo-ingredient {
+  align-items: center;
+  display: flex;
+  margin-right: 20px;
+}
+
+.ingredient-container {
+  background-color: rgba(255, 255, 255, 0.508);
+  border: 2px solid #a99500;
+  border-radius: 5px;
+  column-count: 2;
+  column-gap: 20px;
+  font-size: 13pt;
+  font-weight: 700;
+  margin: 10px 0;
+  padding: 35px;
+}
+
+.instructions-container {
+  background-color: rgba(255, 255, 255, 0.508);
+  border: 2px solid #e3c900;
+  border-radius: 5px;
+  column-count: 2;
+  column-gap: 20px;
+  flex-wrap: wrap;
+  font-size: 13pt;
+  padding: 35px;
+}
+
+.title-container {
+  font-size: 25pt;
+  font-style: italic;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.recipe-photo {
+  border-radius: 5%;
+  margin-top: 20px;
+  position: relative;
+  width: 50%;
+}
+
+.title {
+  background-color: rgba(51, 19, 73, 0.5);
+  border-radius: 5px;
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 10px;
+  position: absolute;
+  top: 290px;
+  z-index: 1;
+}
+
+.image-recipes {
+  width: 30%;
+}
+
+.buttonStart {
+  background-color: #5677fa;
+  border: none;
+  bottom: 0;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  left: 0;
+  outline: none;
+  padding: 10px 20px;
+  position: fixed;
+  transition: background-color 0.3s;
+  width: 100%;
+  z-index: 9999;
+}
+
+.buttonStart:hover {
+  background-color: #00126d;
+}
