@@ -52,20 +52,15 @@ export default function Drinks() {
 
   const drinksSlice = stateGlobal ? stateGlobal.slice(0, 12) : [];
   return (
-    <section className="body-drinks">
+    <>
       <Header title="Drinks" searchOk profileOk />
       {' '}
-      <div className="button-container-drinks">
-        <button
-          className="button-category"
-          data-testid="All-category-filter"
-          onClick={ handleAll }
-        >
+      <div>
+        <button data-testid="All-category-filter" onClick={ handleAll }>
           All
         </button>
         {category.drinks && category.drinks.slice(0, 5).map((item) => (
           <button
-            className="button-category"
             type="button"
             key={ item.strCategory }
             data-testid={ `${item.strCategory}-category-filter` }
@@ -76,38 +71,31 @@ export default function Drinks() {
 
         ))}
       </div>
+      {drinksSlice
+      && (drinksSlice.map((drink, index) => (
+        <button
+          onClick={ () => cardNavigate(drink) }
+          key={ drink.idDrink }
+          data-testid={ `${index}-recipe-card` }
+        >
+          <h2 data-testid={ `${index}-card-name` }>
+            { `${drink.strDrink}` }
+          </h2>
+          <img
+            src={ drink.strDrinkThumb }
+            alt={ drink.strDrink }
+            data-testid={ `${index}-card-img` }
+            width={ 150 }
+          />
+        </button>
 
-      <section className="cards-drinks">
-        {drinksSlice
-        && (drinksSlice.map((drink, index) => (
-          <button
-            onClick={ () => cardNavigate(drink) }
-            key={ drink.idDrink }
-            data-testid={ `${index}-recipe-card` }
-            className="card-title-drinks"
-          >
-            <h2 data-testid={ `${index}-card-name` }>
-              { `${drink.strDrink}` }
-            </h2>
-            <img
-              src={ drink.strDrinkThumb }
-              alt={ drink.strDrink }
-              data-testid={ `${index}-card-img` }
-              className="card-image-drinks"
-            />
-          </button>
-
-        )))}
-      </section>
-
-      <section className="recommendation-drinks">
-        {recommendation.map((food, index) => (
-          <div key={ index }>
-            <p>{food.strMeal}</p>
-          </div>
-        ))}
-        <Footer footerOk />
-      </section>
-    </section>
+      )))}
+      {recommendation.map((food, index) => (
+        <div key={ index }>
+          <p>{food.strMeal}</p>
+        </div>
+      ))}
+      <Footer footerOk />
+    </>
   );
 }

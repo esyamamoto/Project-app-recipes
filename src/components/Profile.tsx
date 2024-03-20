@@ -19,11 +19,10 @@ export default function Profile() {
   }
 
   return (
-    <div className="profile-container">
+    <>
       <Header title="Profile" searchOk={ false } profileOk />
       <h3 data-testid="profile-email">{`${user}`}</h3>
       <button
-        className="profile-recipes"
         data-testid="profile-done-btn"
         onClick={ handleClickDoneRecipes }
       >
@@ -31,7 +30,6 @@ export default function Profile() {
 
       </button>
       <button
-        className="profile-recipes"
         data-testid="profile-favorite-btn"
         onClick={ handleClickFavorite }
       >
@@ -39,7 +37,6 @@ export default function Profile() {
 
       </button>
       <button
-        className="profile-recipes"
         data-testid="profile-logout-btn"
         onClick={ handleClickLogout }
       >
@@ -47,6 +44,6 @@ export default function Profile() {
 
       </button>
       <Footer footerOk />
-    </div>
+    </>
   );
 }

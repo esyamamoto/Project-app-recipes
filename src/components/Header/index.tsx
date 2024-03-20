@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useContext, useState } from 'react';
-import searchIcon from '../../images/searchIcon.png';
-import profileIcon from '../../images/profileIcon.png';
+import searchIcon from '../../images/searchIcon.svg';
+import profileIcon from '../../images/profileIcon.svg';
 import SearchBar from './SearchBar';
 import { FirstLetterApi, FirstLetterApiDrinks,
   IngredientesApi, IngredientesApiDrinks, NameApi, NameApiDrinks } from '../../ApiAll';
@@ -21,6 +21,7 @@ function Header({ title, searchOk = false, profileOk = false }: HeaderProps) {
   const { setStateGlobal, setIdDetails } = useContext(FoodContext);
 
   // redireciona para rota profile
+  // const [recipes, setRecipes] = useState([]);
 
   function handleProfileClick() {
     return (
@@ -155,22 +156,16 @@ function Header({ title, searchOk = false, profileOk = false }: HeaderProps) {
 
   function buttonProfile() {
     return (
-      <button className="profile-button" onClick={ handleProfileClick }>
-        <img
-          className="image-profile"
-          src={ profileIcon }
-          alt="pesquisar"
-          data-testid="profile-top-btn"
-        />
+      <button onClick={ handleProfileClick }>
+        <img src={ profileIcon } alt="pesquisar" data-testid="profile-top-btn" />
       </button>
     );
   }
 
   function buttonSearch() {
     return (
-      <button className="profile-button" onClick={ handleSearchClick }>
+      <button onClick={ handleSearchClick }>
         <img
-          className="image-profile-2"
           src={ searchIcon }
           alt="pesquisar"
           data-testid="search-top-btn"

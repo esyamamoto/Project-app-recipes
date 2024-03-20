@@ -52,22 +52,16 @@ export default function Meals() {
   }
 
   const mealsSlice = stateGlobal ? stateGlobal.slice(0, 12) : [];
-
   return (
-    <section className="body-meals">
+    <>
       <Header title="Meals" searchOk profileOk />
       {' '}
-      <div className="button-container-meals">
-        <button
-          className="button-category"
-          data-testid="All-category-filter"
-          onClick={ handleAll }
-        >
+      <div>
+        <button data-testid="All-category-filter" onClick={ handleAll }>
           All
         </button>
         {category.meals && category.meals.slice(0, 5).map((item) => (
           <button
-            className="button-category-meals"
             type="button"
             key={ item.strCategory }
             data-testid={ `${item.strCategory}-category-filter` }
@@ -77,40 +71,30 @@ export default function Meals() {
           </button>
         ))}
       </div>
-
-      <section className="cards-meals">
-        {mealsSlice
-        && (mealsSlice.map((meal, index) => (
-          <button
-            onClick={ () => cardNavigate(meal) }
-            key={ meal.idMeal }
-            data-testid={ `${index}-recipe-card` }
-            className="card-title-meals"
-          >
-            <h2
-              data-testid={ `${index}-card-name` }
-            >
-              { `${meal.strMeal}` }
-            </h2>
-            <img
-              className="card-image-meals"
-              src={ meal.strMealThumb }
-              alt={ meal.strMeal }
-              data-testid={ `${index}-card-img` }
-            />
-          </button>
-        )))}
-      </section>
-
-      <section className="recommendation-meals">
-        {recommendation.map((food, index) => (
-          <div key={ index }>
-            <p>{food.strDrink}</p>
-          </div>
-        ))}
-        <Footer footerOk />
-      </section>
-
-    </section>
+      {mealsSlice
+      && (mealsSlice.map((meal, index) => (
+        <button
+          onClick={ () => cardNavigate(meal) }
+          key={ meal.idMeal }
+          data-testid={ `${index}-recipe-card` }
+        >
+          <h2 data-testid={ `${index}-card-name` }>
+            { `${meal.strMeal}` }
+          </h2>
+          <img
+            src={ meal.strMealThumb }
+            alt={ meal.strMeal }
+            data-testid={ `${index}-card-img` }
+            width={ 150 }
+          />
+        </button>
+      )))}
+      {recommendation.map((food, index) => (
+        <div key={ index }>
+          <p>{food.strDrink}</p>
+        </div>
+      ))}
+      <Footer footerOk />
+    </>
   );
 }

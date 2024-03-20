@@ -1,0 +1,21 @@
+.carousel-card {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 12vh;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  width: 97%;
+}
+
+.carousel-card .recipe-card {
+  background-color: rgba(199, 199, 199, 0.508);
+  border: 2px solid #a99500;
+  border-radius: 15px;
+  flex: none;
+  font-size: 13pt;
+  font-weight: 700;
+  margin-right: 1px;
+  padding: 15px;
+  scroll-snap-align: start;
+  width: 50%;
+}

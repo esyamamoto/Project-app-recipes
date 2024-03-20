@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
-import drinkIcone from '../../images/drinkIcone.png';
-import mealIcone from '../../images/mealIcon.png';
+import drinkIcon from '../../images/drinkIcon.svg';
+import mealIcon from '../../images/mealIcon.svg';
 import { FooterType } from '../../type';
 import '../../AllCss/Footer.css';
 
@@ -21,32 +21,16 @@ export default function Footer({ footerOk = false }: FooterType) {
 
   function buttonDrinks() {
     return (
-      <button
-        onClick={ handleDrinkClick }
-        className="button iconButton"
-      >
-        <img
-          className="iconFooter"
-          src={ drinkIcone }
-          alt="Drinks"
-          data-testid="drinks-bottom-btn"
-        />
+      <button onClick={ handleDrinkClick }>
+        <img src={ drinkIcon } alt="Drinks" data-testid="drinks-bottom-btn" />
       </button>
     );
   }
 
   function buttonMeals() {
     return (
-      <button
-        className="button iconButton"
-        onClick={ handleMealClick }
-      >
-        <img
-          className="iconFooter"
-          src={ mealIcone }
-          alt="Meals"
-          data-testid="meals-bottom-btn"
-        />
+      <button onClick={ handleMealClick }>
+        <img src={ mealIcon } alt="Meals" data-testid="meals-bottom-btn" />
       </button>
     );
   }
