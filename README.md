@@ -7,15 +7,11 @@
 
 ⚠️ Para fornecer dados, utilizamos duas APIs distintas: uma para receitas de comidas e outra para receitas de bebidas.
 
-O layout do aplicativo foi projetado para dispositivos móveis, portanto, todos os protótipos foram desenvolvidos pensando em telas menores.
+O layout do aplicativo:
 * <details><summary><b> O layout tem como foco dispositivos móveis. Assim, todos os protótipos estarão desenvolvidos em telas menores. :memo:</b></summary>
 
     * Resolução de tela `360 x 640` (360 pixels de largura por 640 pixels de altura).
     </details>
-
-
-  ⚠️ A base de dados foram duas APIs distintas: uma para comidas e outra para bebidas.
-
 
 </details>
 
@@ -45,7 +41,7 @@ O layout do aplicativo foi projetado para dispositivos móveis, portanto, todos 
 
  - Para o projeto ser validado, testamos rodando `npm run cy`. 
  - Esse comando roda a suíte de testes do Cypress, que valida se o fluxo geral e os requisitos funcionais estão funcionando como deveriam. 
- - Também pode ser executado com o comando `npm run cy:open` para ter um resultado visual dos testes executados. Para rodar somente um arquivo de teste, você precisa utilizar o comando: `npm run cy -- --spec cypress/e2e/02-06.login.cy.js`
+ - Também pode ser executado com o comando `npm run cy:open` para ter um resultado visual dos testes executados.
 
   ⚠️ **Atenção**: a aplicação deve estar rodando para o Cypress no terminal poder testar.
 
