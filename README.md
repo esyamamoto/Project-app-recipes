@@ -16,6 +16,15 @@ O layout do aplicativo:
 </details>
 
 <details>
+  <summary><strong>💯Implementações futuras</strong></summary><br />
+  - CSS em todas as paginas
+  - Edição de perfil
+  - Back-End finaliza-lo
+  - Refatoração de codigo 
+  - Entre outras implementações
+</details>
+
+<details>
   <summary><strong>:memo: Habilidades</strong></summary><br />
 
   Neste projeto:
