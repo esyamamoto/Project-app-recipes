@@ -9,17 +9,14 @@ function FoodProvider({ children }: FoodProviderProps) {
   const [inputSearch, setInputSearch] = useState<any>([]);
   const [stateGlobal, setStateGlobal] = useState<any>([]);
   const [idDetails, setIdDetails] = useState<any>([]);
-  const [localItems, setLocalItems] = useState<any>({});
   const values = useMemo(() => ({
     inputSearch,
     stateGlobal,
     setStateGlobal,
     setInputSearch,
     setIdDetails,
-    localItems,
-    setLocalItems,
     idDetails,
-  }), [inputSearch, stateGlobal, idDetails, localItems]);
+  }), [inputSearch, stateGlobal, idDetails]);
 
   return (
     <FoodContext.Provider value={ values }>

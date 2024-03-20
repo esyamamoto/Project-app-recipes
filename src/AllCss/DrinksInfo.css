@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+p {
+  text-align: justify;
+}
+
+
+.body-container {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  position: relative;
+  background-image: url('../images/wallpaperDrinks2.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+  margin: 45px;
+  padding: 55px;
+}
+
+@media (min-width: 768px) {
+  .body-container {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
+
+.favorite-button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  width: 120px;
+  transition: background 0.3s;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+}
+
+.image-favorite{
+  margin-left: 10px;
+  width: 45px;
+}
+
+.favorite-button:hover {
+  border: 2px solid #000000;
+  background: rgba(0, 68, 255, 0.243);
+}
+
+.favorite-button:focus {
+  border: 2px solid #000000;
+  background: rgba(0, 68, 255, 0.243);
+}
+
+.container-photo-ingredient {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.ingredient-container {
+  background-color: rgba(255, 255, 255, 0.704);
+  border: 2px solid #a99500;
+  padding: 35px;
+  border-radius: 5px;
+  font-size: 13pt;
+  margin: 10px 0;
+  font-weight: bold;
+  column-count: 2; /* Divide a lista em duas colunas */
+  column-gap: 20px;
+
+}
+
+.intructions-container {
+  background-color: rgba(255, 255, 255, 0.704);
+  border: 2px solid #e3c900;
+  padding: 35px;
+  border-radius: 5px;
+  font-size: 13pt;
+  flex-wrap: wrap;
+  font-weight: bold;
+  column-count: 2; /* Divide a lista em duas colunas */
+  column-gap: 20px; /* Espaço entre as colunas */
+}
+
+.title-container {
+  font-size: 25pt;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.carousel-card {
+ width: 50%;
+}
+
+.recipe-photo {
+  border-radius: 5%;
+  position: relative; 
+  margin-top: 20px;
+  width: 50%;
+}
+
+.title {
+  position: absolute;
+  left: 65px;
+  top: 310px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 40px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.image-recipes {
+  width: 50%;
+}
+
+.buttonStart {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: #5677fa;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  z-index: 9999;
+}
+.buttonStart:hover {
+  background-color: #00126d;
+}

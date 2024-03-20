@@ -18,8 +18,6 @@ export type InicialType = {
   inputSearch: string,
   stateGlobal: any[],
   idDetails: string,
-  localItems: any,
-  setLocalItems:React.Dispatch<any>,
   setIdDetails: React.Dispatch<any>, // React.Dispatch<any> uma função que aceita um argumento
   setStateGlobal: React.Dispatch<any>,
   setInputSearch: React.Dispatch<any>,
@@ -52,7 +50,6 @@ export type DetailsMeal = {
   strMealThumb: string;
   strCategory: string;
   strArea: string;
-  strTags: string,
   strIngredient1: string;
   strIngredient2: string;
   strIngredient3: string;
@@ -123,27 +120,4 @@ export type DetailsDrink = {
   strMeasure6: string;
   strMeasure7: string;
   strMeasure8: string;
-};
-
-export type DoneRecipe = {
-  id: string,
-  type: string,
-  nationality: string,
-  category: string,
-  alcoholicOrNot: string,
-  name: string,
-  image: string,
-  doneDate: string,
-  tags: any[],
-
-};
-
-export type Favorite = {
-  id: string,
-  type: string,
-  nationality: string,
-  category: string,
-  alcoholicOrNot: string,
-  name: string,
-  image: string,
 };

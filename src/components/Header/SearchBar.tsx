@@ -1,8 +1,11 @@
+import '../../AllCss/Footer.css';
+
 function SearchBar({ fetchAPI, handleChange, inputSearch }: any) {
   return (
     <div>
       <label>
         <input
+          className="search-input"
           type="radio"
           name="type"
           value="Ingredient"
@@ -14,6 +17,7 @@ function SearchBar({ fetchAPI, handleChange, inputSearch }: any) {
       </label>
       <label>
         <input
+          className="search-input"
           data-testid="name-search-radio"
           type="radio"
           value="Name"
@@ -25,6 +29,7 @@ function SearchBar({ fetchAPI, handleChange, inputSearch }: any) {
       </label>
       <label>
         <input
+          className="search-input"
           data-testid="first-letter-search-radio"
           type="radio"
           value="FirstLetter"
@@ -35,6 +40,7 @@ function SearchBar({ fetchAPI, handleChange, inputSearch }: any) {
         First letter
       </label>
       <button
+        className="search-button"
         data-testid="exec-search-btn"
         onClick={ fetchAPI }
       >

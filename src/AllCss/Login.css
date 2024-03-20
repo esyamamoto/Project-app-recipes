@@ -1,0 +1,67 @@
+.body-login {
+  font-family: Arial, sans-serif;
+  background-image: url('../images/walpaper.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.button-enter {
+  width: 80%;
+  max-width: 200px;
+  height: 40px;
+  padding: 10px;
+  background-color: #001effa8;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  font-size: 16pt;
+  margin-bottom: 20px;
+}
+
+.button-enter:hover {
+  background-color: #00fc04;
+  color: #000000;
+}
+
+
+.container-login {
+  background-color: rgba(132, 132, 132, 0.601);
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  max-height: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  position: relative;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+}
+
+.login-input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  background-color: #ffffffc4;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+}

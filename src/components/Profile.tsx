@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import Footer from './Footer';
 import Header from './Header';
+import '../AllCss/Profile.css';
 
 export default function Profile() {
   const user = localStorage.getItem('user');
@@ -18,10 +19,11 @@ export default function Profile() {
   }
 
   return (
-    <>
+    <div className="profile-container">
       <Header title="Profile" searchOk={ false } profileOk />
       <h3 data-testid="profile-email">{`${user}`}</h3>
       <button
+        className="profile-recipes"
         data-testid="profile-done-btn"
         onClick={ handleClickDoneRecipes }
       >
@@ -29,6 +31,7 @@ export default function Profile() {
 
       </button>
       <button
+        className="profile-recipes"
         data-testid="profile-favorite-btn"
         onClick={ handleClickFavorite }
       >
@@ -36,6 +39,7 @@ export default function Profile() {
 
       </button>
       <button
+        className="profile-recipes"
         data-testid="profile-logout-btn"
         onClick={ handleClickLogout }
       >
@@ -43,6 +47,6 @@ export default function Profile() {
 
       </button>
       <Footer footerOk />
-    </>
+    </div>
   );
 }

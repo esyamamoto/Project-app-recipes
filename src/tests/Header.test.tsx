@@ -124,4 +124,18 @@ describe('Testando o componente Header', () => {
     await userEvent.click(screen.getByTestId(execSearchBtn));
     expect(alert).toBeCalled();
   });
+  it('verifica se retorna os dados esperados', async () => {
+    renderWithRouter(<App />, { route: '/meals' });
+    const searchButton = screen.getByTestId(searchTop);
+    await userEvent.click(searchButton);
+    const searchInput = screen.getByTestId(searchInputBtn);
+    await userEvent.click(screen.getByTestId('name-search-radio'));
+    await userEvent.type(searchInput, 'Beef Wellington');// verifica se realmente tem a arrabiata no serachinput
+    await userEvent.click(screen.getByTestId(execSearchBtn));
+    // const cardName = screen.getByTestId('0-card-name');
+    await waitFor(() => {
+      expect(window.location.pathname).toBe('/meals/52803');
+    }, { timeout: 5000 });
+    console.log(window.location.pathname);
+  });
 });

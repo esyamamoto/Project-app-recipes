@@ -1,30 +1,57 @@
+/* .carousel-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.carousel {
+  display: flex;
+  width: calc(100% - 40px);
+  overflow-x: auto;
+  gap: 20 px; 
+  padding: 20px ;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+
+.carousel-card {
+  flex: 0 0 auto;
+  width: 250px;
+  background-color: #7d7b7b;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4 px 6px rgba(0,0,0,0.1);
+  transition: transform 0.5s ease-in-out;
+  display: inline-block;
+  white-space: normal;
+}
+*/
 .image-recipes {
   width: 100%;
 }
-
 .buttonStart, .buttonFinish, .buttonRecipe {
-  border: none;
-  bottom: 0;
-  color: white;
-  cursor: pointer;
-  height: 40px;
-  left: 0;
-  margin: 0 2px;
   position: fixed;
-  width: calc(33.33% - 2px);
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 0, 2px;
+  height: 40px;
+  width: 100%;
 }
-
 .buttonFinish {
-  background-color: red;
-  left: 66.66%;
+  width: 100%;
+  background-color: #ff0000;
 }
-
 .buttonRecipe {
+  width: 100%;
   background-color: #007bff;
-  left: 33.33%;
 }
-
 .buttonStart {
+  width: 100%;
   background-color: #007bff;
-  left: 0%;
 }

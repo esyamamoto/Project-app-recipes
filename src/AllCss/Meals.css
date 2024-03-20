@@ -1,0 +1,127 @@
+.body-meals {
+  font-family: Arial, sans-serif;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+
+.body-meals::before {
+  content: "";
+  background-image: url('../images/walpaper.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(3px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.button-container-meals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+.button-category-meals {
+  width: auto;
+  min-width: 180px;
+  max-width: 200px;
+  height: 30px; 
+  padding: 25px 20px;
+  background-color: #c0c0c0bf;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  font-size: 12pt;
+  border: 2px solid #a6a6a6cb;
+  margin-bottom: 10px;
+  margin: 5px;
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  border: 1px #000000 solid;
+  text-transform: uppercase;
+}
+
+.button-category-meals:hover {
+  background-color: #fff20065;
+  color: #000000;
+  border-color: #eeff00;
+}
+
+.cards-meals{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.card-image-meals {
+  width: 120px;
+  border-radius: 15%;
+  transition: transform 0.2s ease;
+}
+.card-image-meals:hover {
+  transform: scale(1.05);
+}
+
+.card-title-meals {
+  background-color: rgba(255, 230, 128, 0.7);
+  backdrop-filter: blur(5px);
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 15%;
+  word-wrap: break-word;
+  text-align: center;
+  padding: 5px;
+}
+
+.button-category-meals img {
+  justify-content: flex-end;
+  padding-left: 50px;
+}
+
+.button-category-meals:nth-child(1) {
+   background-image: url('../images/RecipeIcon.png');
+   background-position: right center;
+}
+
+.button-category-meals:nth-child(2) {
+  background-image: url('../images/vaca.png');
+  background-position: right center;
+}
+
+.button-category-meals:nth-child(3) {
+  background-image: url('../images/cafe-da-manha.png');
+  background-position: right center;
+}
+
+.button-category-meals:nth-child(4) {
+  background-image: url('../images/frango.png');
+  background-position: right center;
+}
+
+.button-category-meals:nth-child(5) {
+  background-image: url('../images/bolo.png');
+  background-position: right center;
+}
+
+.button-category-meals:nth-child(6) {
+  background-image: url('../images/cabra.png');
+  background-position: right center;
+}

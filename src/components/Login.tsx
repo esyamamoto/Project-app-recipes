@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import logo from '../images/logo app.png';
+import '../AllCss/Login.css';
 
 export default function Login() {
   const [userEmail, setUserEmail] = useState({ email: '' });
@@ -34,31 +36,36 @@ export default function Login() {
   };
 
   return (
-    <div>
-      <h1>Login</h1>
-      <form action="" onSubmit={ handleSubmit }>
-        <input
-          name="email"
-          onChange={ handleLoginChange }
-          placeholder="Digite seu email"
-          type="email"
-          data-testid="email-input"
-        />
-        <input
-          name="password"
-          onChange={ handleLoginChange }
-          type="password"
-          placeholder="Digite sua senha"
-          data-testid="password-input"
-        />
-        <button
-          type="submit"
-          data-testid="login-submit-btn"
-          disabled={ button }
-        >
-          Enter
-        </button>
-      </form>
-    </div>
+    <section className="body-login">
+      <div id="background-login" className="container-login">
+        <h1 className="login">Login</h1>
+        <form action="" onSubmit={ handleSubmit }>
+          <input
+            name="email"
+            onChange={ handleLoginChange }
+            placeholder="Digite seu email"
+            type="email"
+            data-testid="email-input"
+            className="login-input"
+          />
+          <input
+            name="password"
+            onChange={ handleLoginChange }
+            type="password"
+            placeholder="Digite sua senha"
+            data-testid="password-input"
+            className="login-input"
+          />
+          <button
+            type="submit"
+            data-testid="login-submit-btn"
+            disabled={ button }
+            className="button-enter"
+          >
+            Enter
+          </button>
+        </form>
+      </div>
+    </section>
   );
 }

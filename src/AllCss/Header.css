@@ -1,0 +1,34 @@
+.image-profile {
+  width: 100px;
+  height: auto;
+  transition: border 0.3s;
+  border: none; 
+}
+
+.image-profile-2 {
+  width: 70px;
+  height: auto;
+  transition: border 0.3s;
+  border: none; 
+}
+
+
+.profile-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  border: none; 
+  margin: 0 5px 10px;
+}
+
+.profile-button:hover {
+  border: 2px solid #000000;
+
+}
+
+.profile-button:focus {
+  border: 2px solid #000000;
+
+}
