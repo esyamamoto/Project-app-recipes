@@ -1,0 +1,12 @@
+ignore_files:
+  - reporter.json
+  - cypress.config.js
+  - .stylelintrc.json
+  - .stylelintignore
+  - .eslintignore
+  - .eslintrc.json
+  - cypress/
+  - vite.config.ts
+  - tsconfig.json
+  - tsconfig.node.json
+  - setupTests.ts

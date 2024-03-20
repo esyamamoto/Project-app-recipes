@@ -47,6 +47,7 @@
     "@testing-library/user-event": "^14.4.3",
     "@trybe/eslint-config-frontend": "^1.11.3",
     "@types/react-router-dom": "^5.3.3",
+    "@types/react-slick": "^0.23.10",
     "@vitejs/plugin-react-swc": "^3.1.0",
     "@vitest/coverage-c8": "^0.30.1",
     "cross-env": "^7.0.3",
