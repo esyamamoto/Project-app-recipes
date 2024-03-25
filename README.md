@@ -12,6 +12,12 @@ O layout do aplicativo:
 
     * Resolução de tela `360 x 640` (360 pixels de largura por 640 pixels de altura).
     </details>
+    <p align="center">
+      <img src="https://i.imgur.com/GjkFdqV.png" height="450" width="400">
+      <img src="https://i.imgur.com/sqIEgpR.png" height="450" width="400">
+      <img src="https://i.imgur.com/Vi7KtJW.png" height="450" width="400">
+      <img src="https://i.imgur.com/g3NKalX.png" height="450" width="400">
+    </p>
 
 </details>
 
@@ -77,3 +83,13 @@ O layout do aplicativo:
       O The CockTailDB API é um banco de dados aberto, mantido pela comunidade, com receitas e ingredientes de todo o mundo.
 
       Você pode vê-los [aqui](https://www.thecocktaildb.com/api.php).
+
+  ### Projeto em andamento:
+  <p align="center">
+    <img src="https://i.imgur.com/Y0XLv2i.png" height="350" width="500">
+    <img src="https://i.imgur.com/h2YfX9O.png" height="350" width="500">
+    <img src="https://i.imgur.com/vVGOLLV.png" height="350" width="500">
+    <img src="https://i.imgur.com/T4pK7Xw.png" height="350" width="500">
+  </p>
+
+
